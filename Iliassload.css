@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.old-and-new {
+    position: relative;
+    background-color: #061745;
+    width: 100%;
+    height: 100vh;
+}
+
+.mix-old-new {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+}
+
+.mix-old-new div {
+    background-color: #36abe6;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.mix-old-new .eight-circle {
+    transform: translateX(-80px) translateY(35px);
+    animation: exchange-eight 500ms infinite linear;
+}
+
+.mix-old-new .seven-circle {
+    transform: translateX(-40px) translateY(25px);
+    animation: exchange-seven 500ms infinite 0.3s linear;
+}
+
+.mix-old-new .sex-circle {
+    transform: translateX(-10px) translateY(5px);
+    animation: exchange-sex 500ms infinite 0.6s linear;
+}
+
+.mix-old-new .five-circle {
+    transform: translateY(-15px);
+    animation: exchange-five 500ms infinite 0.9s linear;
+}
+
+.mix-old-new .four-circle {
+    transform: translateY(-25px);
+    animation: exchange-four 500ms infinite 1.2s linear;
+}
+
+.mix-old-new .three-circle {
+    transform: translateY(-15px);
+    animation: exchange-three 500ms infinite 1.5s linear;
+}
+
+.mix-old-new .two-circle {
+    transform: translateX(10px) translateY(5px);
+    animation: exchange-two 500ms infinite 1.8s linear;
+}
+
+.mix-old-new .one-circle {
+    transform: translateX(40px) translateY(25px);
+    animation: exchange-one 500ms infinite 2.1s linear;
+}
+
+@keyframes exchange-one {
+    to {
+        transform: translateX(30px) translateY(5px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-two {
+    to {
+        transform: translateX(20px) translateY(-15px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-three {
+    to {
+        transform: translateX(20px) translateY(-25px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-four {
+    to {
+        transform: translateX(20px) translateY(-15px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-five {
+    to {
+        transform: translateX(10px) translateY(5px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-sex {
+    to {
+        transform: translateX(-20px) translateY(25px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-seven {
+    to {
+        transform: translateX(-60px) translateY(35px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes exchange-eight {
+    to {
+        transform: translateX(-100px) translateY(25px);
+        opacity: 0.2;
+    }
+}
